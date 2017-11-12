@@ -1,0 +1,7 @@
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\bin\Debug\netstandard1.4\SportStore.Repository.deps.json
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\bin\Debug\netstandard1.4\SportStore.Repository.dll
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\bin\Debug\netstandard1.4\SportStore.Repository.pdb
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard1.4\SportStore.Repository.csprojResolveAssemblyReference.cache
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard1.4\SportStore.Repository.AssemblyInfo.cs
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard1.4\SportStore.Repository.dll
+C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard1.4\SportStore.Repository.pdb
