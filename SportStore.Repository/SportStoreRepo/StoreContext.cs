@@ -15,7 +15,7 @@ namespace SportStore.Repository.SportStoreRepo
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\batman\\Documents\\SportStoreDB.mdf;Integrated Security=True;Connect Timeout=30");
         }
 
         public Task<int> SaveChangesAsync()

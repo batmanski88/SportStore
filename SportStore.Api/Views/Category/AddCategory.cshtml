@@ -1,0 +1,32 @@
+﻿@model SportStore.Api.ViewModels.CategoryViewModel
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+<section class="container">
+    <div class="row">
+        @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post, new { @id = "data-form", @enctype = "multipart/form-data", @class = "form-group"}))
+        {
+            @Html.AntiForgeryToken()
+            <div class="col-md-12">
+                @Html.LabelFor(x => x.Name, new { @class ="col-md-2 control-label"})
+                <div class="col-md-10">
+                    @Html.TextBoxFor(x => x.Name, new {@class ="col-md-6 form-control" })
+                    @Html.ValidationMessageFor(x => x.Name, null, new { @class ="text-danger"})
+                </div>
+            </div>
+            <div class="col-md-12">
+                @Html.Label("Dodaj zdjęcie: ", new { @class = "col-md-2 control-label"})
+                <div class="col-md-10">
+                    <input type="file" name="file" class="col-md-6" />
+                    @ViewBag.Message
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Dodaj</button> 
+            </div>
+        }
+    </div>
+</section>
+

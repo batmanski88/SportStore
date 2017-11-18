@@ -1,0 +1,58 @@
+﻿@model SportStore.Api.ViewModels.AddProductViewModel
+@{
+    ViewBag.Title = "AddProduct";
+}
+
+<section class="container">
+    <h2 class="h2">Dodaj produkt</h2>
+    @using (Html.BeginForm("AddProduct", "Product", FormMethod.Post, new { @id = "data-form", @enctype = "multipart/form-data", @class = "form-horizontal" }))
+    {
+        <div class="form-group">
+            @Html.LabelFor(x => x.Categories, new { @class="control-label col-md-2"})
+            <div class="col-md-4">
+                @Html.DropDownListFor(x => x.CategoryId, Model.Categories , "Wybierz Kategorie", new { @class="col-md-6 form-control"})
+                @Html.ValidationMessageFor(x => x.Categories, null, new { @class="text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Name, new { @class="control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Name, new { @class="col-md-4 form-control" })
+                @Html.ValidationMessageFor(x => x.Name, null, new { @class="text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Price, new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Price, new { @class = "col-md-4 form-control" })
+                @Html.ValidationMessageFor(x => x.Price, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Count, new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Count, new { @class = "col-md-4 form-control" })
+                @Html.ValidationMessageFor(x => x.Count, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Description, new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Description, new { @class = "col-md-4 form-control" })
+                @Html.ValidationMessageFor(x => x.Description, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Zdjęcie: ", new { @class="control-label col-md-2" })
+            <div class="col-md-4">
+                <input type="file" name="file"class="form-control" value="Dodaj plik"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit"  class="btn btn-primary col-md-offset-3">Dodaj</button>
+        </div>
+    }
+</section>
+
+
+

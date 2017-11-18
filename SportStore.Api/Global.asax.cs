@@ -1,5 +1,6 @@
 ﻿
 using SportStore.Api.App_Start;
+using SportStore.Api.Infrastructure.Mapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace SportStore.Api
         protected void Application_Start()
         {
             AutofacContainer.ConfigureContainer();
+            AutoMapperConfig.Initialize();
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

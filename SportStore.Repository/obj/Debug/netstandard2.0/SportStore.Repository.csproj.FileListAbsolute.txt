@@ -7,3 +7,12 @@ C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportS
 C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.pdb
 C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.csproj.CoreCompileInputs.cache
 C:\Users\marcin.lapinski\Documents\Visual Studio 2017\Projects\PostDriver\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.AssemblyInfoInputs.cache
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\netstandard2.0\SportStore.Repository.deps.json
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\netstandard2.0\SportStore.Repository.dll
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\netstandard2.0\SportStore.Repository.pdb
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.csprojResolveAssemblyReference.cache
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.AssemblyInfoInputs.cache
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.AssemblyInfo.cs
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.dll
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\netstandard2.0\SportStore.Repository.pdb

@@ -14,7 +14,11 @@ namespace SportStore.Repository.Models
         public string Description { get; protected set; }
         public string FileName { get; protected set; }
         public bool Available { get; protected set; }
-        public virtual Category Category { get; protected set; }
+
+        public Product()
+        {
+
+        }
 
         public Product(Guid productId, Guid categoryId, string name, decimal price, int count, bool available)
         {

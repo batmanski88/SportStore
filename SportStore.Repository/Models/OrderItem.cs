@@ -11,8 +11,7 @@ namespace SportStore.Repository.Models
         public Guid ProductId { get; protected set; }
         public int Quantity { get; protected set; }
         public decimal UnitPrice { get; protected set; }
-        public virtual Product Product { get; protected set; }
-        public virtual Order Order { get; protected set; }
+        
 
         public OrderItem(Guid orderItemId, Guid orderId, Guid productId, int quantity, decimal unitPrice)
         {

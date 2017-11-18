@@ -12,7 +12,7 @@ namespace SportStore.Api.Infrastructure.IoC
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<CategoryService>().As<ICategoryService>().InstancePerLifetimeScope();
-            builder.RegisterType<ProductService>().As<ICategoryService>().InstancePerLifetimeScope();
+            builder.RegisterType<ProductService>().As<IProductService>().InstancePerLifetimeScope();
             builder.RegisterType<CartManager>().As<ICartManager>().InstancePerLifetimeScope();
             builder.RegisterType<SessionManager>().As<ISessionManager>().InstancePerLifetimeScope();
             base.Load(builder);

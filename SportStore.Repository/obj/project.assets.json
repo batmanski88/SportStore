@@ -2933,7 +2933,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marcin.lapinski\\.nuget\\packages\\": {},
+    "C:\\Users\\batman\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -2942,17 +2942,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcin.lapinski\\Documents\\Visual Studio 2017\\Projects\\PostDriver\\SportStore\\SportStore.Repository\\SportStore.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\batman\\Documents\\SportStore\\SportStore\\SportStore.Repository\\SportStore.Repository.csproj",
       "projectName": "SportStore.Repository",
-      "projectPath": "C:\\Users\\marcin.lapinski\\Documents\\Visual Studio 2017\\Projects\\PostDriver\\SportStore\\SportStore.Repository\\SportStore.Repository.csproj",
-      "packagesPath": "C:\\Users\\marcin.lapinski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcin.lapinski\\Documents\\Visual Studio 2017\\Projects\\PostDriver\\SportStore\\SportStore.Repository\\obj\\",
+      "projectPath": "C:\\Users\\batman\\Documents\\SportStore\\SportStore\\SportStore.Repository\\SportStore.Repository.csproj",
+      "packagesPath": "C:\\Users\\batman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\batman\\Documents\\SportStore\\SportStore\\SportStore.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\marcin.lapinski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\batman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

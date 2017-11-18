@@ -11,10 +11,10 @@ namespace SportStore.Api.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ProductService _productService;
-        private readonly CategoryService _categoryService;
+        private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public HomeController(ProductService productService, CategoryService categoryService)
+        public HomeController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
             _categoryService = categoryService;
@@ -24,12 +24,12 @@ namespace SportStore.Api.Controllers
         {
             var categories = await _categoryService.GetCategoriesAsync();
             var products = await _productService.GetProductsAsync();
-            products.OrderBy(p => Guid.NewGuid()).Take(6);
+            var sixproducts = products.OrderBy(p => Guid.NewGuid()).Take(6).ToList();
 
             var homeViewModel = new HomeViewModel
             {
                 Categories = categories,
-                Products = products
+                Products = sixproducts
             };
 
             return View(homeViewModel);

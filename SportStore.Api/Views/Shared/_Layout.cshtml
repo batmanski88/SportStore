@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/CSS/site.css" />
+</head>
+<body>
+    @RenderBody()
+
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

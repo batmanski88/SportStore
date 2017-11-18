@@ -9,12 +9,17 @@ namespace SportStore.Repository.Models
         public Guid CategoryId { get; protected set; }
         public string Name { get; protected set; }
         public string IconFileName { get; protected set; }
-        public virtual ICollection<Product> Products { get; protected set; }
 
-        public Category(Guid categoryId, string name)
+        public Category()
+        {
+
+        }
+
+        public Category(Guid categoryId, string name, string iconFileName)
         {
             CategoryId = categoryId;
             SetName(name);
+            SetIconFileName(iconFileName);
         }
 
         public void SetName(string name)
