@@ -164,7 +164,20 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CSS\site.css" />
-    <Content Include="Content\Icons\Piłka Nożna.png" />
+    <Content Include="Content\Icons\Kajaki.png" />
+    <Content Include="Content\Icons\Koszykówka.png" />
+    <Content Include="Content\Icons\Pilka Nozna.png" />
+    <Content Include="Content\Icons\Plywanie.png" />
+    <Content Include="Content\Icons\Rowery.png" />
+    <Content Include="Content\Icons\Rugby.png" />
+    <Content Include="Content\Icons\Siatkówka.png" />
+    <Content Include="Content\Icons\Tenis.png" />
+    <Content Include="Content\Icons\Zimowe.png" />
+    <Content Include="Content\Products\Narty-damskie.jpg" />
+    <Content Include="Content\Products\pilka-koszykowa-spalding.jpg" />
+    <Content Include="Content\Products\Piłka nożna adida.jpg" />
+    <Content Include="Content\Products\Piłka siatkowa.jpg" />
+    <Content Include="Content\Products\łyżwy-figurowe.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -240,7 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Products\" />
     <Folder Include="Views\Store\" />
   </ItemGroup>
   <ItemGroup>

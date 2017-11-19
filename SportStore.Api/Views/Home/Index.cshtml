@@ -3,9 +3,22 @@
     ViewBag.Title = "Index";
 }
 
-<div class="container-fluid">
+<section class="container">
     <div class="row">
-
+        <div class="categories">
+            <ul>
+                @foreach(var item in Model.Categories)
+                {
+                    <li>
+                        <a href="@Url.Action("List", "Store", new { currentCategory = item.Name})">
+                            <img class="icon" src="~/Content/Icons/@item.IconFileName" />
+                            <br />
+                            @item.Name
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
     </div>
-</div>
+</section>
 

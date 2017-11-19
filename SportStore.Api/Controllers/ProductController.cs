@@ -39,9 +39,14 @@ namespace SportStore.Api.Controllers
         {
             if(ModelState.IsValid)
             {
+                if(model.Count > 0)
+                {
+                    model.Available = true;
+                }
                 await _productService.AddProductAsync(model, file);
                 ViewBag.Message = "Pomyślnie dodano produkt";
                 ModelState.Clear();
+                return View(model);
             }
 
             return View();
