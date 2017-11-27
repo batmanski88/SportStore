@@ -175,9 +175,9 @@
     <Content Include="Content\Icons\Zimowe.png" />
     <Content Include="Content\Products\Narty-damskie.jpg" />
     <Content Include="Content\Products\pilka-koszykowa-spalding.jpg" />
-    <Content Include="Content\Products\Piłka nożna adida.jpg" />
-    <Content Include="Content\Products\Piłka siatkowa.jpg" />
-    <Content Include="Content\Products\łyżwy-figurowe.jpg" />
+    <Content Include="Content\Products\Pilka nozna adida.jpg" />
+    <Content Include="Content\Products\Pilka siatkowa.jpg" />
+    <Content Include="Content\Products\lyzwy-figurowe.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -209,6 +209,7 @@
   <ItemGroup>
     <Compile Include="App_Start\AutofacContainer.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -225,14 +226,18 @@
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\ICartManager.cs" />
     <Compile Include="Services\ICategoryService.cs" />
+    <Compile Include="Services\IOrderService.cs" />
     <Compile Include="Services\IProductService.cs" />
     <Compile Include="Services\ISessionManager.cs" />
+    <Compile Include="Services\OrderService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\SessionManager.cs" />
     <Compile Include="ViewModels\AddProductViewModel.cs" />
     <Compile Include="ViewModels\CartItemViewModel.cs" />
+    <Compile Include="ViewModels\CartViewModel.cs" />
     <Compile Include="ViewModels\CategoryViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\OrderItemViewModel.cs" />
     <Compile Include="ViewModels\OrderViewModel.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />
   </ItemGroup>
@@ -244,6 +249,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Category\AddCategory.cshtml" />
     <Content Include="Views\Product\AddProduct.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Store\ProductList.cshtml" />
+    <Content Include="Views\Store\List.cshtml" />
+    <Content Include="Views\Store\Menu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -253,7 +262,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Store\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportStore.Repository\SportStore.Repository.csproj">

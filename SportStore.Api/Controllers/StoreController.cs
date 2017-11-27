@@ -21,7 +21,7 @@ namespace SportStore.Api.Controllers
 
 
         // GET: Store
-        public async Task<ActionResult> ProductList(string currentCategory)
+        public async Task<ActionResult> List(string currentCategory)
         {
             var categories = await _categoryService.GetCategoriesAsync();
             var products = await _productService.GetProductsAsync();
@@ -30,6 +30,13 @@ namespace SportStore.Api.Controllers
             var productsByCat = products.Where(x => x.CategoryId == category.CategoryId);
 
             return View(productsByCat);
+        }
+
+        [ChildActionOnly]
+        public async Task<ActionResult> Menu()
+        {
+            var categories = await _categoryService.GetCategoriesAsync();
+            return PartialView(categories);
         }
     }
 }

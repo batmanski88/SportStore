@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SportStore.Api.ViewModels.ProductViewModel>
+
+<section class="container">
+    @foreach (var item in Model)
+    {
+        <div class="product col-md-4">
+            <div class="img">
+                <img src="~/Content/Products/@item.FileName" />
+            </div>
+            <p>
+                @item.Name
+                <br />
+                @item.Price zł
+                <br />
+                <a href="@Url.Action("AddToCart", "Cart", new { ProductId = item.ProductId})">Dodaj do koszyka<span></span></a>
+            </p>
+        </div>
+    }
+</section>

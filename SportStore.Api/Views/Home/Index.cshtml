@@ -21,4 +21,22 @@
         </div>
     </div>
 </section>
-
+<section class="container">
+    <div class="row">
+    @foreach(var item in Model.Products)
+        {
+            <div class="product col-md-4">
+                <div class="img">
+                    <img src="~/Content/Products/@item.FileName" />
+                </div>
+                <p>
+                    @item.Name
+                    <br />
+                    @item.Price zł
+                    <br />
+                    <a href="@Url.Action("AddToCart", "Cart", new { ProductId = item.ProductId})">Dodaj do koszyka<span></span></a>
+                </p>
+            </div>
+        }
+    </div>
+</section>

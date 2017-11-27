@@ -9,8 +9,8 @@ namespace SportStore.Api.Services
 {
     public interface ICartManager
     {
-        void AddToCart(int ProductId);
-        void RemoveFromCart(int ProductId);
+        Task AddToCart(Guid ProductId);
+        void RemoveFromCart(Guid ProductId);
         decimal GetCartTotalPrice();
         int GetCartTotalCount();
         List<CartItemViewModel> GetCart();

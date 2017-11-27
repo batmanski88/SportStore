@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Integration.Mvc;
 using AutoMapper;
 using SportStore.Api.Infrastructure.Mapper;
 using SportStore.Repository.ISportStoreRepo;
@@ -16,6 +17,7 @@ namespace SportStore.Api.Infrastructure.IoC
         {
             builder.RegisterType<StoreContext>().As<IStoreContext>().InstancePerLifetimeScope();
             builder.RegisterInstance(AutoMapperConfig.Initialize()).SingleInstance();
+            builder.RegisterModule(new AutofacWebTypesModule());
             base.Load(builder);
         }
     }
