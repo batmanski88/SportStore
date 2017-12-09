@@ -20,6 +20,9 @@ namespace SportStore.Api.Infrastructure.Mapper
                cfg.CreateMap<Product, AddProductViewModel>();
                cfg.CreateMap<Order, OrderViewModel>();
                cfg.CreateMap<OrderItem, OrderItemViewModel>();
+               cfg.CreateMap<User, UserViewModel>();
+               cfg.CreateMap<User, LoginViewModel>();
+               cfg.CreateMap<User, RegisterViewModel>();
 
            }).CreateMapper();
         

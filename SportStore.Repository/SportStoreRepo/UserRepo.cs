@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using SportStore.Repository.Models;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using System.Data.Entity;
 
 namespace SportStore.Repository.SportStoreRepo
 {
@@ -17,15 +17,20 @@ namespace SportStore.Repository.SportStoreRepo
             _context = context;
         }
 
-        public async Task AddCompanyAsync(User User)
+        public async Task AddUserAsync(User User)
         {
             _context.Users.Add(User);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<User>> GetCompaniesAsync()
+        public async Task<IEnumerable<User>> GetUsersAsync()
         {
             return await _context.Users.ToListAsync();
+        }
+
+        public async Task<User> GetUserByEmailAsync(string Email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(x => x.Email == Email);
         }
 
         public async Task<User> GetUserByIdAsync(Guid UserId)
@@ -33,17 +38,19 @@ namespace SportStore.Repository.SportStoreRepo
             return await _context.Users.FirstOrDefaultAsync(x => x.UserId == UserId);
         }
 
-        public async Task RemoveCompanyAsync(Guid UserId)
+        public async Task RemoveUserAsync(Guid UserId)
         {
             var user = await _context.Users.FirstOrDefaultAsync(x => x.UserId == UserId);
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateCompanyAsync(User User)
+
+        public async Task UpdateUserAsync(User User)
         {
-            _context.Users.Update(User);
+            _context.Users.Add(User);
             await _context.SaveChangesAsync();
         }
+
     }
 }

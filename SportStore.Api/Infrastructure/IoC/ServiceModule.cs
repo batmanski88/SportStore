@@ -16,6 +16,8 @@ namespace SportStore.Api.Infrastructure.IoC
             builder.RegisterType<CartManager>().As<ICartManager>().InstancePerLifetimeScope();
             builder.RegisterType<SessionManager>().As<ISessionManager>().InstancePerLifetimeScope();
             builder.RegisterType<OrderService>().As<IOrderService>().InstancePerLifetimeScope();
+            builder.RegisterType<Encrypter>().As<IEncrypter>().InstancePerLifetimeScope();
+            builder.RegisterType<AccountService>().As<IAccountService>().InstancePerLifetimeScope();
             base.Load(builder);
         }
     }

@@ -1,6 +1,7 @@
 ﻿
 using SportStore.Api.App_Start;
 using SportStore.Api.Infrastructure.Mapper;
+using SportStore.Api.Infrastructure.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;

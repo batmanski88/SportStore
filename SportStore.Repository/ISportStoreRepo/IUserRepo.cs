@@ -9,9 +9,10 @@ namespace SportStore.Repository.ISportStoreRepo
     public interface IUserRepo
     {
         Task<User> GetUserByIdAsync(Guid UserId);
-        Task<IEnumerable<User>> GetCompaniesAsync();
-        Task AddCompanyAsync(User User);
-        Task UpdateCompanyAsync(User User);
-        Task RemoveCompanyAsync(Guid UserId);
+        Task<User> GetUserByEmailAsync(string Email);
+        Task<IEnumerable<User>> GetUsersAsync();
+        Task AddUserAsync(User User);
+        Task UpdateUserAsync(User User);
+        Task RemoveUserAsync(Guid UserId);
     }
 }

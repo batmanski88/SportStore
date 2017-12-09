@@ -1,26 +1,28 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using SportStore.Repository.ISportStoreRepo;
 using SportStore.Repository.Models;
+using System.Data.Entity;
+
 
 namespace SportStore.Repository.SportStoreRepo
 {
     public class StoreContext : DbContext, IStoreContext
     {
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderItem> OrderItems { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public StoreContext()
+            :base("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\batman\\Documents\\SportStoreDB.mdf;Integrated Security=True;Connect Timeout=30")
         {
-            optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\batman\\Documents\\SportStoreDB.mdf;Integrated Security=True;Connect Timeout=30");
+
         }
 
-        public Task<int> SaveChangesAsync()
+        public IDbSet<Category> Categories { get; set; }
+        public IDbSet<Product> Products { get; set; }
+        public IDbSet<User> Users { get; set; }
+        public IDbSet<Order> Orders { get; set; }
+        public IDbSet<OrderItem> OrderItems { get; set; }
+
+        public override async Task<int> SaveChangesAsync()
         {
-            return base.SaveChangesAsync();
+            return await base.SaveChangesAsync();
         }
     }
 }

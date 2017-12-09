@@ -1,5 +1,7 @@
-﻿using SportStore.Api.Services;
+﻿using SportStore.Api.Infrastructure.Security;
+using SportStore.Api.Services;
 using SportStore.Api.ViewModels;
+using SportStore.Repository.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +21,9 @@ namespace SportStore.Api.Controllers
             _productService = productService;
             _categoryService = categoryService;
         }
+
         // GET: Home
+        [CustomAuthorize(UserRole = "Administrator")]
         public async Task<ActionResult> Index()
         {
             var categories = await _categoryService.GetCategoriesAsync();

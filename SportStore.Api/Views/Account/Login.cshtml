@@ -1,0 +1,38 @@
+﻿@model SportStore.Api.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<section class="container">
+    <h2 style="text-align: center;">Zaloguj się</h2>
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control col-md-6" })
+                @Html.ValidationMessageFor(m => m.Email, null, new {@class="text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control col-md-6" })
+                @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control col-md-6" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-primary" style="float: right">Zaloguj</button>
+        </div>
+    }
+</section>
+

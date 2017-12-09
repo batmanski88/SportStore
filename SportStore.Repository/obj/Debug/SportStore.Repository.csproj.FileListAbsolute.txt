@@ -1,0 +1,11 @@
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\SportStore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\SportStore.Repository.dll.config
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\SportStore.Repository.dll
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\SportStore.Repository.pdb
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\EntityFramework.dll
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\EntityFramework.xml
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\SportStore.Repository.dll
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\SportStore.Repository.pdb
+C:\Users\batman\Documents\SportStore\SportStore\SportStore.Repository\obj\Debug\SportStore.Repository.csprojResolveAssemblyReference.cache

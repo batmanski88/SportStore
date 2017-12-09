@@ -2,6 +2,7 @@
 using Autofac.Integration.Mvc;
 using AutoMapper;
 using SportStore.Api.Infrastructure.Mapper;
+using SportStore.Api.Infrastructure.Security;
 using SportStore.Repository.ISportStoreRepo;
 using SportStore.Repository.SportStoreRepo;
 using System;

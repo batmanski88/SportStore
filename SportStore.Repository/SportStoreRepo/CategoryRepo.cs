@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using SportStore.Repository.Models;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+
 using System.Linq;
+using System.Data.Entity;
 
 namespace SportStore.Repository.SportStoreRepo
 {
@@ -44,7 +45,7 @@ namespace SportStore.Repository.SportStoreRepo
 
         public async Task UpdateCategoryAsync(Category Category)
         {
-            _context.Categories.Update(Category);
+            _context.Categories.Add(Category);
             await _context.SaveChangesAsync();
         }
     }

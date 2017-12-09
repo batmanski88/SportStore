@@ -1,13 +1,14 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SportStore.Repository.Models
 {
-    public class User
+    public class User 
     {
         public Guid UserId { get; protected set; }
-        public string UserName { get; protected set; }
+        public string UserName { get; set; }
         public string Password { get; protected set; }
         public string Salt { get; protected set; }
         public string FirstName { get; protected set; }
@@ -15,16 +16,23 @@ namespace SportStore.Repository.Models
         public string Address { get; protected set; }
         public string City { get; protected set; }
         public string Code { get; protected set; }
-        public string Email { get; protected set; }
+        public string Email { get; set; }
+        public string Role { get; protected set; }
         public DateTime CreatedAt { get; protected set; }
         public DateTime UpdatedAt { get; protected set; }
 
-        public User(Guid userId, string userName, string password, string salt, string email)
+        public User()
+        {
+
+        }
+
+        public User(Guid userId, string userName, string password, string salt, string email, string role)
         {
             UserId = userId;
             SetUserName(userName);
             SetPassword(password, salt);
             SetEmail(email);
+            SetRole(role);
             CreatedAt = DateTime.UtcNow;
         }
 
@@ -97,5 +105,12 @@ namespace SportStore.Repository.Models
             }
             Email = email;
         }
+
+        public void SetRole(string role)
+        {
+            Role = role;
+        }
+
     }
+
 }

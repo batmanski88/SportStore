@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
 using SportStore.Repository.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,11 +10,11 @@ namespace SportStore.Repository.ISportStoreRepo
 {
     public interface IStoreContext
     {
-        DbSet<Category> Categories { get; set; }
-        DbSet<Product> Products { get; set; }
-        DbSet<User> Users { get; set; }
-        DbSet<Order> Orders { get; set; }
-        DbSet<OrderItem> OrderItems { get; set; }
+        IDbSet<Category> Categories { get; set; }
+        IDbSet<Product> Products { get; set; }
+        IDbSet<User> Users { get; set; }
+        IDbSet<Order> Orders { get; set; }
+        IDbSet<OrderItem> OrderItems { get; set; }
         Task<int> SaveChangesAsync();
     }
 }

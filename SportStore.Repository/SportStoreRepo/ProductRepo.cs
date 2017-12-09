@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using SportStore.Repository.Models;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using System.Data.Entity;
 
 namespace SportStore.Repository.SportStoreRepo
 {
@@ -42,7 +42,7 @@ namespace SportStore.Repository.SportStoreRepo
 
         public async Task UpdateProdutcAsync(Product Product)
         {
-            _context.Products.Update(Product);
+            _context.Products.Add(Product);
             await _context.SaveChangesAsync();
         }
     }
